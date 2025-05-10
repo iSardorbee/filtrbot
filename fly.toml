@@ -1,0 +1,18 @@
+app = "filtrbot"
+
+[env]
+BOT_TOKEN = "7323459399:AAGWLzDua9bmmIrhircoll31dJzeVJlNlrY"
+
+[experimental]
+auto_rollback = true
+
+[build]
+builder = "Dockerfile"
+
+[[services]]
+internal_port = 8080
+protocol = "tcp"
+
+  [[services.ports]]
+  handlers = []
+  port = 80
